@@ -855,7 +855,6 @@ GameObject:
   - component: {fileID: 1632639311}
   - component: {fileID: 1632639310}
   - component: {fileID: 1632639309}
-  - component: {fileID: 1632639314}
   - component: {fileID: 1632639315}
   m_Layer: 0
   m_Name: NPC
@@ -980,19 +979,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1632639314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632639308}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77faa238c187731439c073a13c4ebfbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bot
-  target: {fileID: 1256457176}
 --- !u!114 &1632639315
 MonoBehaviour:
   m_ObjectHideFlags: 0
