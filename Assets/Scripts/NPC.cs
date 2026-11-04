@@ -6,7 +6,9 @@ public class Bot : MonoBehaviour
 {
     NavMeshAgent agent;
     public GameObject target;
-
+    [SerializeField]int NearDistance = 1;
+    [SerializeField]int FarDistance = 10;
+    bool fleeing = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,7 +43,27 @@ public class Bot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Seek(target.transform.position);
-        Pursue();
+        UnityEngine.Vector3 distVec = target.transform.position - this.transform.position;
+        float dist = distVec.magnitude;
+
+        if(dist <= NearDistance && !fleeing)
+        {
+            fleeing = true;
+        }
+
+        if (dist >= FarDistance && fleeing)
+        {
+            fleeing = false;
+        }
+
+
+        if (fleeing)
+        {
+            Flee(target.transform.position);
+        }
+        else if(!fleeing)
+        {
+            Pursue();
+        }
     }
 }
