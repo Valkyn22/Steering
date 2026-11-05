@@ -4,26 +4,29 @@ using UnityEngine;
 public class Drive : MonoBehaviour
 {
     public float speed = 10.0f;
-    public float rotationSpeed = 100.0f;
+    public float rotationSpeed = 720.0f;
     public float currentSpeed = 0;
-
 
     // Update is called once per frame
     void Update()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
-        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+        float h = Input.GetAxis("Horizontal");   // A / D
+        float v = Input.GetAxis("Vertical");     // W / S
 
+        // Clamp so diagonals aren't faster than straight movement
+        Vector3 input = Vector3.ClampMagnitude(new Vector3(h, 0, v), 1f);
 
-        translation *= Time.deltaTime;
-        rotation *= Time.deltaTime;
+        transform.Translate(input * speed * Time.deltaTime, Space.World);
 
+        // Speed in units per second
+        currentSpeed = input.magnitude * speed;
 
-        transform.Translate(0, 0, translation);
-        currentSpeed = translation;
-
-
-        transform.Rotate(0, rotation, 0);
+        // Face the movement direction
+        if (input.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(input);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
     }
 }
 
