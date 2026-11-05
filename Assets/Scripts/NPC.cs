@@ -63,7 +63,7 @@ public class Bot : MonoBehaviour
         }
         else if(!fleeing)
         {
-            Pursue();
+            Seek(target.transform.position);
         }
     }
 }
