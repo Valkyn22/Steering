@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Composite
   behaviors:
   - {fileID: 11400000, guid: c30ed9686168e184aafb9ea79be8be85, type: 2}
-  - {fileID: 11400000, guid: b6d7a324a87c1be439ed6331fe9d6323, type: 2}
+  - {fileID: 11400000, guid: b3fd4243c2f0b914eba6dd7543b1cab7, type: 2}
   - {fileID: 11400000, guid: c3150c142a624df408e8bd859c440a3c, type: 2}
   - {fileID: 11400000, guid: 154680dcf2b9fd847b41e7f544623312, type: 2}
   weights:
   - 1
-  - 4
+  - 1
   - 2
   - 2

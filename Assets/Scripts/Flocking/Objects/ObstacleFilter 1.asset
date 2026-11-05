@@ -9,6 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29e153e25b0e2ec4d8350e724a204caa, type: 3}
-  m_Name: AvoidObstacles
-  m_EditorClassIdentifier: Assembly-CSharp::Avoidance
+  m_Script: {fileID: 11500000, guid: 80a950d8705e2614aa9ad094e4e7f4fc, type: 3}
+  m_Name: ObstacleFilter 1
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleFilter
+  mask:
+    serializedVersion: 2
+    m_Bits: 8

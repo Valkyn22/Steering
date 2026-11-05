@@ -5,9 +5,14 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Obstacle Filter")]
 
-public class ObstacleFilter : ScriptableObject
+public class ObstacleFilter : FlockBehavior
 {
     public LayerMask mask;
+
+    public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    {
+        return Vector3.zero;
+    }
 
     public List<Transform> Filter(FlockAgent agent, List<Transform> original)
     {
