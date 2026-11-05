@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 1060316829}
   - component: {fileID: 1060316828}
   - component: {fileID: 1060316827}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 1445598668}
   - component: {fileID: 1445598667}
   - component: {fileID: 1445598666}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,10 +755,10 @@ MonoBehaviour:
   avoidanceRadiusMultiplier: 0.223
   leaderCount: 5
   leaderBehavior: {fileID: 11400000, guid: 754c1356546492a49a53005332cc23f0, type: 2}
-  leaderSpeedMultiplier: 0.6
+  leaderSpeedMultiplier: 1
   leaderColor: {r: 1, g: 0, b: 0, a: 1}
   followerColor: {r: 1, g: 1, b: 1, a: 1}
-  wanderRadius: 20
+  wanderRadius: 15
 --- !u!4 &1555829160
 Transform:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 2110262219}
   - component: {fileID: 2110262218}
   - component: {fileID: 2110262217}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
