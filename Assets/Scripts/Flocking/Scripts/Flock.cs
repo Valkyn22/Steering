@@ -32,7 +32,7 @@ public class Flock : MonoBehaviour
     [Header("Leaders")]
     [Range(0, 10)] public int leaderCount = 1;          // the leader selector
     public FlockBehavior leaderBehavior;                 // wander + obstacle avoidance
-    [Range(0.1f, 1f)] public float leaderSpeedMultiplier = 1.5f;
+    [Range(0.1f, 2f)] public float leaderSpeedMultiplier = 1.5f;
     public Color leaderColor = Color.red;
     public Color followerColor = Color.white;
     public float wanderRadius = 20f;                     // area the leaders roam in
