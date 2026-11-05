@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 1445598668}
   - component: {fileID: 1445598667}
   - component: {fileID: 1445598666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ MonoBehaviour:
   maxSpeed: 5
   neighborRadius: 3.1
   avoidanceRadiusMultiplier: 0.223
-  leaderCount: 1
+  leaderCount: 5
   leaderBehavior: {fileID: 11400000, guid: 754c1356546492a49a53005332cc23f0, type: 2}
   leaderSpeedMultiplier: 0.6
   leaderColor: {r: 1, g: 0, b: 0, a: 1}
