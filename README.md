@@ -1,5 +1,5 @@
-#Artificial Intelligence Lab 1 - Steering
-##Project organization
+# Artificial Intelligence Lab 1 - Steering
+## Project organization
 The project is separated into three scenes:
 - Behvior Graph
     Seek and Flee behaviors implemented using Graphs. When the agent is seeking and reaches the player, starts fleeing until it reaches a safety distance, and then starts seeking again.
