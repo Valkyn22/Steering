@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 1632639311}
   - component: {fileID: 1632639310}
   - component: {fileID: 1632639309}
-  - component: {fileID: 1632639314}
+  - component: {fileID: 1632639315}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -979,7 +979,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1632639314
+--- !u!114 &1632639315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -988,10 +988,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632639308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77faa238c187731439c073a13c4ebfbb, type: 3}
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bot
-  target: {fileID: 1256457176}
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
+  m_Graph: {fileID: 8021171033151236857, guid: 1aa7953d9d366af4b92a0459f827448d, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 1446969503436243201
+  - rid: 1446969503436243202
+  m_OriginalGraph: {fileID: 8021171033151236857, guid: 1aa7953d9d366af4b92a0459f827448d, type: 2}
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1446969503436243201
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1632639308}
+    - rid: 1446969503436243202
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13776508067706780691
+          m_Value1: 4266155862832114158
+        Name: Target
+        m_Value: {fileID: 1256457176}
 --- !u!1 &1846699230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1204,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 97fcfd439ccd98345b9a8eff785e77b8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 31f41a488fc1aea4c9dfae464194f1fd, type: 2}
   m_BuildHeightMesh: 0
 --- !u!64 &2122844133
 MeshCollider:
